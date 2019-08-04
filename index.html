@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>DAI Talent Events App</title>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+  </head>
+  <body>
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name" class="primary">Event Name</label>
+          <input type="text" id="name" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="organiser" class="primary">Organiser</label>
+          <input type="text" id="organiser" required/>
+        </div>
+
+        <div class="form-item">
+          <label for="location" class="primary">Location</label>
+          <select id="location">
+            <option value="" disabled selected></option>
+            <option value="Edinburgh">Edinburgh</option>
+            <option value="Manchester">Manchester</option>
+            <option value="Glasgow">Glasgow</option>
+          </select>
+        </div>
+      <!-- </div> -->
+
+      <div class="form-item">
+        <label for="ticket" class="primary">Ticket Type</label>
+        <select id="ticket">
+          <option value="" disabled selected></option>
+          <option value="Early Bird">Early Bird 50% off</option>
+          <option value="Regular Sale">Regular Sale 25% off</option>
+          <option value="Last Minute">Last Minute 10% off</option>
+          <option value="Normal">Normal</option>
+        </select>
+      </div>
+    </div>
+
+    <input type="submit" value="save"/>
+    </form>
+
+    <h1>DAI Events List</h1>
+    <div id="events-list"></div>
+  </body>
+</html>
