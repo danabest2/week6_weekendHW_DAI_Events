@@ -2,6 +2,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const newItemform = document.querySelector('#new-item-form');
   newItemform.addEventListener('submit', handleNewItemFormSubmit);
 
+  // const newFeedback = document.querySelector('#feedback-form');
+  // newFeedback.addEventListener('sumbit', handleNewFeedback);
+
   const deleteAllButton = document.querySelector('#delete-all');
   deleteAllButton.addEventListener('click', handleDeleteAllClick);
 });
@@ -35,6 +38,21 @@ const createDaieventsListItem = function (form) {
   const ticket = document.createElement('p');
   ticket.textContent = form.ticket.value;
   daieventsListItem.appendChild(ticket);
+
+
+  const reason1 = document.createElement('h3');
+  reason1.textContent = form.reason1.value;
+  daieventsListItem.appendChild(reason1);
+
+
+  const reason2 = document.createElement('h3');
+  reason1.textContent = form.reason2.value;
+  daieventsListItem.appendChild(reason2);
+
+
+  const reason3 = document.createElement('h3');
+  reason1.textContent = form.reason3.value;
+  daieventsListItem.appendChild(reason3);
   return daieventsListItem;
 };
 
@@ -42,6 +60,37 @@ const handleDeleteAllClick = function (event) {
   const daieventsList = document.querySelector('#events-list');
   daieventsList.innerHTML = '';
 };
+
+
+// const handleNewFeedback = function (event) {
+//   event.preventDefault();
+//
+//   const feedbackListItem = createFeedbackListItem(event.target);
+//   const feedbackList = document.querySelector('#feedback-list');
+//   feedList.appendChild(feedbackListItem);
+//
+//   event.target.reset();
+//
+// };
+//
+// const createFeedbackListItem = function (form) {
+//   const feedbackListItem = document.createElement('li');
+//   feedbackListItem.classList.add('feedback-list-item');
+//
+//   const reason1 = document.createElement('p');
+//   reason1.textContent = form.reason1.value;
+//   feedbackListItem.appendChild(reason1);
+//
+//   const reason2 = document.createElement('p');
+//   reason2.textContent = form.reason2.value;
+//   feedbackListItem.appendChild(reason2);
+//
+//   const reason3 = document.createElement('p');
+//   reason3.textContent = form.reason3.value;
+//   feedbackListItem.appendChild(reason3);
+//
+//   return feedbackListItem;
+// };
 
 /* this was initial code  detupdocument.addEventListener('DOMContentLoaded', () => {
   console.log('JavaScript loaded');

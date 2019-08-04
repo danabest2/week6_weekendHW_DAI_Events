@@ -31,7 +31,7 @@
       <!-- </div> -->
 
       <div class="form-item">
-        <label for="ticket" class="primary">Ticket_Type</label>
+        <label for="ticket" class="primary">Ticket Type</label>
         <select id="ticket">
           <option value="" disabled selected></option>
           <option value="Early Bird">Early Bird</option>
@@ -40,6 +40,20 @@
           <option value="Normal">Normal</option>
         </select>
       </div>
+
+      <p>Please select main reason for attending the events:</p>
+      
+      <div class="form-item">
+        <input type="radio" id="reason1" required/>
+        <label for="reason1" class="primary">Networking</label>
+
+        <input type="radio" id="reason2" required/>
+        <label for="reason2" class="primary">Career development</label>
+
+        <input type="radio" id="reason3"required/>
+        <label for="reason3" class="primary">Learn latest HR trends</label>
+      </div>
+
     </div>
     <input type="submit" value="save"/>
     </form>
@@ -48,5 +62,33 @@
 
     <h1>DAI Events List</h1>
     <div id="events-list"></div>
+<!--
+    <form id="feedback-form">
+    <div id = id="form-wrapper2">
+
+      <p>Please select main reason for attending the events:</p>
+      <div>
+        <input type="radio" id="reason1"
+         name="reason" value="networking" required/>
+        <label for="reason1">Networking</label>
+
+        <input type="radio" id="reason2"
+         name="reason" value="career development" required/>
+        <label for="reason2">Career development</label>
+
+        <input type="radio" id="reason3"
+         name="reason" value="learn latest HR trends" required/>
+        <label for="reason3">Learn latest HR trends</label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+      </div>
+    </form>
+
+    <h2>Attendance reasons</h1>
+    <div id="feedback-list"></div> -->
+
+
   </body>
 </html>
